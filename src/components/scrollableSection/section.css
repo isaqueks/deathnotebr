@@ -6,5 +6,5 @@
     overflow-y: hidden;
 
     scroll-snap-stop: always;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
