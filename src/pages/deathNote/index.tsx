@@ -82,7 +82,7 @@ export default function DeathNote() {
                     </p>
                 </CharacterView>
 
-                <CharacterView name="Near" image="/img/death-note/near.webp" mode="right">
+                <CharacterView name="Near" image="/img/death-note/near.webp">
                     <p>
                         Near (ニア Nia),
                         é uma das crianças superdotadas do orfanato Wammy's House e 
@@ -93,7 +93,7 @@ export default function DeathNote() {
                     </p>
                 </CharacterView>
 
-                <CharacterView name="Mello" image="/img/death-note/mello.png">
+                <CharacterView name="Mello" image="/img/death-note/mello.png" mode="right">
                     <p>
                         Mello (メ ロ, Mero ) é o mais velho dos dois sucessores 
                         de L, criado na Wammy's House , o orfanato de Watari para 
