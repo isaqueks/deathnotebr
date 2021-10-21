@@ -82,7 +82,7 @@ export default function DeathNote() {
                     </p>
                 </CharacterView>
 
-                <CharacterView name="Near" image="/img/death-note/near.webp">
+                <CharacterView name="Near" image="/img/death-note/near.png">
                     <p>
                         Near (ニア Nia),
                         é uma das crianças superdotadas do orfanato Wammy's House e 
