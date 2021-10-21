@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.252f4ebb.chunk.css",
-    "main.js": "/static/js/main.c9cb8304.chunk.js",
-    "main.js.map": "/static/js/main.c9cb8304.chunk.js.map",
+    "main.css": "/static/css/main.5e208bc0.chunk.css",
+    "main.js": "/static/js/main.f350a090.chunk.js",
+    "main.js.map": "/static/js/main.f350a090.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.aaca56c7.js",
     "runtime-main.js.map": "/static/js/runtime-main.aaca56c7.js.map",
     "static/js/2.50044e51.chunk.js": "/static/js/2.50044e51.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.5d25e0b8.chunk.js": "/static/js/3.5d25e0b8.chunk.js",
     "static/js/3.5d25e0b8.chunk.js.map": "/static/js/3.5d25e0b8.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.252f4ebb.chunk.css.map": "/static/css/main.252f4ebb.chunk.css.map",
+    "static/css/main.5e208bc0.chunk.css.map": "/static/css/main.5e208bc0.chunk.css.map",
     "static/js/2.50044e51.chunk.js.LICENSE.txt": "/static/js/2.50044e51.chunk.js.LICENSE.txt",
     "static/media/deathNote.css": "/static/media/death.b643100a.tft"
   },
   "entrypoints": [
     "static/js/runtime-main.aaca56c7.js",
     "static/js/2.50044e51.chunk.js",
-    "static/css/main.252f4ebb.chunk.css",
-    "static/js/main.c9cb8304.chunk.js"
+    "static/css/main.5e208bc0.chunk.css",
+    "static/js/main.f350a090.chunk.js"
   ]
 }
