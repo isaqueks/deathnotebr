@@ -1,0 +1,83 @@
+
+.deathNote {
+    background-color: rgb(16, 16, 16);
+    color: white;
+}
+
+@font-face {
+    font-family: 'death-note';
+    src: url('./death.tft');
+}
+
+.deathNote h1 {
+    letter-spacing: 1pt;
+    font-size: 4rem;
+    margin: 32px 0px;
+    font-family: 'death-note';
+}
+
+.deathNote h2 {
+    letter-spacing: 1pt;
+    font-size: 3rem;
+    margin: 24px 0px;
+    font-family: 'death-note';
+}
+
+.page-block {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.deathNote p {
+    font-size: 1.5rem;
+    text-shadow:#000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+                #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px;
+}
+
+.youtubeOpening {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 560 / 315;
+    margin: auto;
+    border: 2px dashed gray;
+    padding: 5px 3px;
+}
+
+.youtubeWrapper {
+    width: 100%;
+    display: grid;
+}
+
+.deathNote .siteDescription p {
+    font-size: 1.2em;
+}
+
+.deathNote .seriesDescription {
+    width: 350px;
+    min-width: 50%;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    .primaryParagraph {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .deathNote .seriesDescription p {
+        font-size: clamp(1rem, 1vw, 1.25rem) !important;
+    }
+}
+
+.footer {
+    display: block;
+    min-height: 40px;
+    height: auto;
+    text-align: center;
+}
+
+.footer > * {
+    margin: auto;
+}

@@ -1,0 +1,9 @@
+
+.scrollableViewport {
+    height: 100vh;
+    overflow-y: auto;
+
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+    scroll-snap-type: y mandatory;
+}

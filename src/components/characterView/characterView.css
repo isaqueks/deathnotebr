@@ -1,0 +1,84 @@
+:root {
+    --image-size: 380px;
+}
+
+.characterView {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+
+    grid-template-rows: 100%;
+    overflow: hidden;
+}
+
+.characterView.viewMode-left {
+    grid-template-columns: var(--image-size) 1fr;   
+}
+
+.characterView.viewMode-right {
+    grid-template-columns: 1fr var(--image-size);   
+}
+
+@media only screen and (max-width: 850px) {
+    .characterView {
+        grid-template-columns: 100% !important;   
+        grid-template-rows: 70% 100% !important;
+        /* height: 150vh; */
+        overflow: auto;
+    }
+
+    .characterDescription {
+        text-align: center !important;
+    }
+
+    .characterInfo {
+        padding-top: 16px !important;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .viewMode-right .characterImage {
+        order: 2;
+    }
+    
+    .viewMode-right .characterInfo {
+        order: 1;
+    }
+}
+
+.characterImage {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 16px;
+    margin-bottom: 0px;
+}
+
+.characterInfo {
+    padding: 16px;
+    padding-top: 48px;
+    text-align: center;
+    display: grid;
+}
+
+.characterInfoWrapper {
+    margin: auto;
+}
+
+.characterName {
+    display: block;
+    font-size: 4em;
+    border-bottom: 1px solid gray;
+}
+
+.characterDescription {
+    font-size: 1.2em;
+}
+
+.viewMode-left .characterDescription {
+    text-align: left;
+}
+
+.viewMode-right .characterDescription {
+    text-align: right;
+}
