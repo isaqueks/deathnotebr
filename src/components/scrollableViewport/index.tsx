@@ -25,10 +25,15 @@ export default class ScrollableViewport extends React.Component {
             index++;
         }
 
+        // if (index == children.length - 1) {
+        //     index--;
+        // }
+
         const lastElement = children[index];
         const currentElement = children[index + 1];
 
         if (!currentElement) {
+            (lastElement as any).style.opacity = 1;
             return;
         }
 
@@ -38,7 +43,7 @@ export default class ScrollableViewport extends React.Component {
             if (i < index) {
                 const elementAsAny = children[i] as any;
                 elementAsAny.style.opacity = 0;
-                if (window.innerWidth <= 850) {
+                if (window.innerWidth <= 850 && index < children.length - 1) {
                     elementAsAny.scrollTop = 0;
                 }
             }
