@@ -4,7 +4,7 @@ import './index.css';
 import DeathNote from './pages/deathNote';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <React.StrictMode>
     <DeathNote />
   </React.StrictMode>,
