@@ -13,13 +13,9 @@ export default function CharacterView(props: PropsWithChildren<CharacterProps>) 
 
     const mode = props.mode || 'left';
 
-    const imgStyle = {
-        backgroundImage: `url("${props.image}")`
-    }
-
     const imageSide = (
-        <div key="img-side" className="characterImage" style={imgStyle}>
-
+        <div key="img-side" className="characterImage">
+            <img src={props.image} alt={`Death Note: ${props.name}`} />
         </div>
     );
 

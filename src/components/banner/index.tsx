@@ -1,6 +1,7 @@
 import './banner.css';
 
 export default function Banner(props) {
+    
     // Classname should not be "banner"
     // because some ad blockers
     // will block the keyword "banner"
