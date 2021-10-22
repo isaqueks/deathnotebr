@@ -114,6 +114,7 @@ export default function DeathNote() {
                                     className="link" 
                                     href="https://github.com/isaqueks/deathnotebr"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >Veja o código fonte no GitHub!</a>
 
                             </p>

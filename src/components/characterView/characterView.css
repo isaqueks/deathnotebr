@@ -5,7 +5,8 @@
 .characterView {
     display: grid;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 
     grid-template-rows: 100%;
     overflow: hidden;
@@ -22,7 +23,7 @@
 @media only screen and (max-width: 850px) {
     .characterView {
         grid-template-columns: 100% !important;   
-        grid-template-rows: 70% 100% !important;
+        grid-template-rows: 50% auto !important;
         /* height: 150vh; */
         overflow: auto;
     }

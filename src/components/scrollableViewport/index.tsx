@@ -1,92 +1,20 @@
-import React, { Children } from "react";
+import React, { Children, useRef } from "react";
+import scrollAnimation from "../../ts/scrollAnim";
 import ScrollableSection from "../scrollableSection";
 import './scrollableViewport.css';
 
-function roundOpacity(opacity: number): number {
-    if (opacity <= 0.025) return 0;
-    else if (opacity >= 0.975) return 1;
-    return opacity;
-}
+export default function ScollableViewport(props) {
 
-export default class ScrollableViewport extends React.Component {
+    const children = React.Children.toArray(props.children);
+    const ref = useRef(null);
 
-    private element: React.Ref<any> = React.createRef();
-    private domElement: HTMLElement;
+    let i = 0;
 
-    handleScroll(e) {
-        const { children: childrenRaw, scrollTop } = this.domElement;
-        const children = Array.from(childrenRaw);
-        const clientHeight = children[0].clientHeight;
-
-        const lastPerfectScroll = scrollTop - (scrollTop % clientHeight);
-
-        let index = 0;
-        for (let h = 0; h < lastPerfectScroll; h += clientHeight) {
-            index++;
-        }
-
-        const lastElement = children[index];
-        const currentElement = children[index + 1];
-
-        if (!currentElement) {
-            (lastElement as any).style.opacity = 1;
-            (children[index - 1] as any).opacity = 0;
-            return;
-        }
-
-        // Apply opacity 0 on all previous elements
-        // for a bug fix
-        for (let i = 0; i < children.length; i++) {
-            if (i < index) {
-                const elementAsAny = children[i] as any;
-                elementAsAny.style.opacity = 0;
-                if (window.innerWidth <= 850 && index < children.length - 1) {
-                    elementAsAny.scrollTop = 0;
-                }
-            }
-        }
-
-        const lastY = (lastElement as any).offsetTop % clientHeight;
-        const currY = (currentElement as any).offsetTop % clientHeight;
-
-        const perc = lastY / clientHeight;
-
-        const lastAsAny = lastElement as any;
-        const currAsAny = currentElement as any;
-
-        lastAsAny.style.opacity = roundOpacity(1 - perc);
-        currAsAny.style.opacity = roundOpacity(perc);
-
-
-    }
-
-    componentDidMount() {
-
-        this.domElement = (this.element as any).current as HTMLElement;
-
-    }
-
-    render() {
-
-        const children = React.Children.toArray(this.props.children);
-
-        let i = 0;
-
-        const getSection = (child) => {
-            return <ScrollableSection key={i++} index={0}>
+    return <div ref={ref} className="scrollableViewport" onScroll={scrollAnimation(ref)}>
+        {children.map(child => {
+            return <ScrollableSection key={i} index={i++}>
                 {child}
             </ScrollableSection>
-        }
-
-        const arrayToRender = [];
-
-        children.forEach(child => {
-            arrayToRender.push(getSection(child));
-        })
-
-        return <div className="scrollableViewport" ref={this.element} onScroll={e => this.handleScroll(e)}>
-            {arrayToRender}
-        </div>
-    }
-
+        })}
+    </div>
 }

@@ -11,14 +11,7 @@ export default function ScrollableSection(props: PropsWithChildren<Props>) {
 
     const { index, snapStart, ...other } = props;
 
-    const style: any = {
-    }
-
-    if (typeof index === 'number') {
-        style.top = `${(index * 100)}vh`;
-    }
-
-    return <section className="scrollableSection" style={style} {...other}>
+    return <section className="scrollableSection" {...other} data-index={index}>
         {props.children}
     </section>
 }
