@@ -1,0 +1,27 @@
+
+.doubleSplit {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    .doubleSplit {
+        grid-template-columns: 100%;
+        grid-template-rows: 100vh 100vh;
+        height: 100vh;
+        overflow-y: auto;
+    }
+}
+
+.doubleSplit .splitLeft {
+    width: 100%;
+    height: 100%;
+}
+
+.doubleSplit .splitRight {
+    width: 100%;
+    height: 100%;
+}

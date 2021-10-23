@@ -22,9 +22,9 @@ export default function CharacterView(props: PropsWithChildren<CharacterProps>) 
     const infoSide = (
         <div key="info-side" className="characterInfo">
             <div className="characterInfoWrapper">
-                <h1 className="characterName">
+                <h2 className="h1 characterName">
                     {props.name}
-                </h1>
+                </h2>
                 <div className="characterDescription">
                     {props.children}
                 </div>

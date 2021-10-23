@@ -1,0 +1,22 @@
+
+.quote::before, .quote::after {
+    font-size: 1.2em;
+    margin: 0 0.1em;
+    display: inline-block;
+}
+
+.quote::before {
+    content: '“';
+}
+
+.quote::after {
+    content: '”';
+}
+
+.quote blockquote {
+    display: inline;
+}
+
+.quote cite::before {
+    content: ' - ';
+}

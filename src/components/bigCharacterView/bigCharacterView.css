@@ -1,0 +1,56 @@
+
+.bigCharacterDetails {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 100%;
+}
+
+.bigCharacterDescription {
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.bigCharacterDescriptionWrapper {
+    margin: auto;
+    margin-bottom: 0;
+    height: 200px;
+}
+
+.bigCharacterDescriptionWrapper * {
+    margin: 0px;
+}
+
+.bigCharacterDescriptionWrapper .gradient {
+    height: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    .bigCharacterGradient {
+        background: transparent !important;
+    }
+
+    .bigCharacterDescriptionWrapper {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .bigCharacterDescriptionWrapper {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .bigCharacterDescriptionWrapper {
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .bigCharacterDescriptionWrapper {
+        height: 400px;
+    }
+}

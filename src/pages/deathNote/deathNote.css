@@ -9,7 +9,7 @@
     src: url('./death.tft');
 }
 
-.deathNote h1 {
+.deathNote h1, .deathNote .h1 {
     letter-spacing: 1pt;
     font-size: 4rem;
     margin: 32px 0px;
