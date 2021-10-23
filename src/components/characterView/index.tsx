@@ -15,7 +15,7 @@ export default function CharacterView(props: PropsWithChildren<CharacterProps>) 
 
     const imageSide = (
         <div key="img-side" className="characterImage">
-            <img src={props.image} alt={`Death Note: ${props.name}`} />
+            <img loading="lazy" src={props.image} alt={`Death Note: ${props.name}`} />
         </div>
     );
 
