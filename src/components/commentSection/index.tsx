@@ -15,6 +15,7 @@ export default function CommentSection(props) {
             (function () { // DON'T EDIT BELOW THIS LINE
                 var d = document, s = d.createElement('script');
                 s.src = 'https://deathnotebr.disqus.com/embed.js';
+                s.async = true;
                 s.setAttribute('data-timestamp', String(new Date()));
                 (d.head || d.body).appendChild(s);
             })();
