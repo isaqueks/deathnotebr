@@ -173,7 +173,9 @@ export default function DeathNote() {
                                 src="https://www.youtube.com/embed/8QE9cmfxx4s"
                                 title="YouTube video player"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen={true}>
+                                allowFullScreen={true}
+                                loading="lazy"
+                                >
                             </iframe>
                         </div>
                         <p>
