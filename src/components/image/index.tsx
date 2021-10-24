@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 interface Props {
     src: string;
@@ -17,16 +17,20 @@ export default function Image(props: Props) {
 
     const placeholder = parts.join('/');
 
-    const ref = useRef<HTMLImageElement>(null);
+    const [ placeholderLoaded, setPlaceholderLoaded ] = useState(false);
 
     const onLoad = (e) => {
-        if (ref.current.src.endsWith(props.src)) {
+        if (placeholderLoaded) {
             return;
         }
 
-        ref.current.src = props.src;
-        ref.current.loading = 'lazy';
+        setPlaceholderLoaded(true);
     }
 
-    return <img ref={ref} src={placeholder} alt={props.alt} onLoad={onLoad} />
+    return <img 
+        src={placeholderLoaded ? props.src : placeholder} 
+        loading={placeholderLoaded ? 'lazy' : 'eager'}
+        alt={props.alt} 
+        onLoad={onLoad} 
+    />
 }
