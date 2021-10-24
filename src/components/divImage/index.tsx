@@ -4,6 +4,8 @@ import './divImage.css';
 interface Props {
     size?: 'contain' | 'cover';
     position?: 'center' | 'left' | 'right';
+    x?: string;
+    y?: string;
     repeat?: string;
     url: string;
     style?: any;
@@ -18,6 +20,13 @@ export default function DivImage(props: PropsWithChildren<Props>) {
         backgroundPosition: props.position || 'center',
         backgroundRepeat: props.repeat || 'no-repeat',
         ...props.style
+    }
+
+    if (props.x) {
+        style.backgroundPositionX = props.x;
+    }
+    if (props.y) {
+        style.backgroundPositionY = props.y;
     }
 
     return <div className={"divImage".concat(typeof props.className === 'string' ? ` ${props.className}` : '')} style={style}>

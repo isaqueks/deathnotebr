@@ -1,17 +1,11 @@
+import DivImage from '../divImage';
 import './banner.css';
 
 export default function Banner(props) {
     
-    // Classname should not be "banner"
-    // because some ad blockers
-    // will block the keyword "banner"
+    const { url, ...other } = props;
 
-    const style = {
-        backgroundImage: `url("${props.image}")`,
-        backgroundPositionX: props.x || 'auto'
-    }
-
-    return <div className="splashSection" style={style} {...props}>
+    return <DivImage className="splashSection" url={url} {...other}>
         {props.children}
-    </div>
+    </DivImage>
 }

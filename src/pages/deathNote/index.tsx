@@ -2,6 +2,7 @@ import Banner from "../../components/banner";
 import BigCharacterView from "../../components/bigCharacterView";
 import CharacterView from "../../components/characterView";
 import CommentSection from "../../components/commentSection";
+import DivImage from "../../components/divImage";
 import DoubleSplit from "../../components/doubleSplit";
 import FullViewportHeight from "../../components/fullViewportHeight";
 import Gradient from "../../components/gradient";
@@ -15,7 +16,7 @@ export default function DeathNote() {
         <div className="deathNote">
             <ScrollableViewport>
 
-                <Banner image="/img/death-note/banner2.jpg" x="200px">
+                <Banner url="/img/death-note/banner2.jpg" x="200px">
                     <Gradient>
                         <Padding value="32px">
                             <div className="seriesDescription">
