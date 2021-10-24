@@ -20,8 +20,6 @@ export default function Image(props: Props) {
     const ref = useRef<HTMLImageElement>(null);
 
     const onLoad = (e) => {
-        console.log(ref.current.src, props.src);
-        
         if (ref.current.src.endsWith(props.src)) {
             return;
         }
