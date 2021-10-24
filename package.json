@@ -20,7 +20,7 @@
     "scripts": {
         "start": "react-scripts start",
         "phimages": "bash ./scripts/images.sh",
-        "build": "npm phimages && react-scripts build && bash ./scripts/postbuild.sh",
+        "build": "npm run phimages && react-scripts build && bash ./scripts/postbuild.sh",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
