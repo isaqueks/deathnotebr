@@ -35,6 +35,11 @@
     .characterInfo {
         padding-top: 16px !important;
     }
+
+    .characterImage img {
+        height: 100%;
+        width: auto !important;
+    }
 }
 
 @media only screen and (min-width: 850px) {
@@ -62,9 +67,10 @@
     font-size: 0;
     display: inline-block;
     /* width: auto; */
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    /* height: auto; */
+    /* max-width: 100%;
+    max-height: 100%; */
+    width: 100%;
     bottom: 0px;
     margin: auto;
     margin-bottom: 0;

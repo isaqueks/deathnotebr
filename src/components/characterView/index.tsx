@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import ScrollableSection from '../scrollableSection';
 import ScrollableViewport from '../scrollableViewport';
+import Image from '../image';
 import './characterView.css';
 
 export interface CharacterProps {
@@ -15,7 +16,8 @@ export default function CharacterView(props: PropsWithChildren<CharacterProps>) 
 
     const imageSide = (
         <div key="img-side" className="characterImage">
-            <img loading="lazy" src={props.image} alt={`Death Note: ${props.name}`} />
+            {/* <img loading="lazy" src={props.image} alt={`Death Note: ${props.name}`} /> */}
+            <Image src={props.image} alt={`Death Note: ${props.name}`} />
         </div>
     );
 

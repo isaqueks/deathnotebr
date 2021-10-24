@@ -19,7 +19,8 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "bash ./scripts/images.sh && react-scripts build && bash ./scripts/postbuild.sh",
+        "phimages": "bash ./scripts/images.sh",
+        "build": "npm phimages && react-scripts build && bash ./scripts/postbuild.sh",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
