@@ -6,6 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
+  /*
+    Is the following OK?
+    https://stackoverflow.com/a/60735432
+  */
+  height: calc(100vh - calc(100vh - 100%));
+  position: fixed;
 }
 
 * {
