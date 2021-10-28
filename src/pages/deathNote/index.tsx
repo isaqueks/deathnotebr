@@ -146,9 +146,9 @@ export default function DeathNote() {
                         <h2>Sobre o site</h2>
                         <div className="siteDescription">
                             <p>
-                                DeathNote.com.br é um site feito por Isaque K. Schluter,
-                                um fã de Death Note. O objetivo do site é trazer informações
-                                sobre Death Note e seus personagens.
+                                DeathNote.com.br é um site feito por um fã 
+                                de Death Note. O objetivo do site é trazer 
+                                informações sobre Death Note e seus personagens.
                                 O WebSite é open-source:&nbsp;
                                 <a
                                     className="link"
