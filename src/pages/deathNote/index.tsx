@@ -143,7 +143,7 @@ export default function DeathNote() {
 
                 <div className="site-info page-block">
                     <Padding value="32px" bottom="0">
-                        <h2>Sobre o site</h2>
+                        <h2 id="sobre">Sobre o site</h2>
                         <div className="siteDescription">
                             <p>
                                 DeathNote.com.br é um site feito por um fã 

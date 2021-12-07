@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import DeathNote from './pages/deathNote';
+import DeathNoteAnime from './pages/deathNote/anime';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.hydrate(
   <React.StrictMode>
-    <DeathNote />
+    {/* <DeathNote /> */}
+    <DeathNoteAnime />
   </React.StrictMode>,
   document.getElementById('root')
 );

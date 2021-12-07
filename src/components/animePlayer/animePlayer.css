@@ -1,0 +1,65 @@
+
+.animePlayer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+
+.episodeList {
+    width: 100%;
+    height: 100%;
+}
+
+.episodeLink {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    color: inherit;
+    text-align: left;
+    padding: 0 12px;
+}
+
+@media only screen and (max-width: 870px) {
+    .animePlayer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 10px;
+    }
+
+    .episodeLink {
+        border-bottom: 1px dashed gray;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+}
+
+.videoRow {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 50px;
+}
+
+.videoTitle {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    font-size: 24px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.videoTitle span {
+    margin: auto;
+}
+
+.animePlayer video {
+    width: 100%;
+}
