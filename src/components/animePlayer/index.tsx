@@ -27,9 +27,16 @@ export default function AnimePlayer(props: Props) {
             <div className="videoTitle">
                 <span>{episode.title}</span>
             </div>
+            <div className="videoDescription">
+                <p>
+                    Assista o anime Death Note online gratuitamente.
+                    Assista Death Note em alta resolução e qualidade. <br />
+                    {episode.title}
+                </p>
+            </div>
         </div>
         <div className="episodeList">
-            {props.series.episodes.map((episode, index) => <EpisodeLink key={index} linkUrl={`/watch?e=${index}`} episode={episode} />)}
+            {props.series.episodes.map((episode, index) => <EpisodeLink key={index} linkUrl={`/watch/${index}`} episode={episode} />)}
         </div>
 
     </section>

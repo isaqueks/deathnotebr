@@ -27,3 +27,14 @@
     height: 100%;
     width: 100%;
 }
+
+.navTitle {
+    letter-spacing: inherit !important;
+    display: inline-block;
+    height: 100%;
+    line-height: 60px;
+    padding: 0 12px !important;
+    margin: 0 !important;
+    font-size: 26px !important;
+    font-family: inherit !important;
+}
