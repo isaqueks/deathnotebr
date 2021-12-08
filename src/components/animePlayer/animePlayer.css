@@ -12,6 +12,8 @@
 .episodeList {
     width: 100%;
     height: 100%;
+    overflow: auto;
+    max-height: 600px;
 }
 
 .episodeLink {
@@ -39,12 +41,16 @@
         line-height: 40px;
         font-size: 20px;
     }
+
+    .episodeList {
+        max-height: initial;
+    }
 }
 
 .videoRow {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 50px auto;
+    grid-template-rows: auto 50px 1fr;
 }
 
 .videoTitle {

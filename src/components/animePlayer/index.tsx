@@ -36,7 +36,7 @@ export default function AnimePlayer(props: Props) {
             </div>
         </div>
         <div className="episodeList">
-            {props.series.episodes.map((episode, index) => <EpisodeLink key={index} linkUrl={`/watch/${index}`} episode={episode} />)}
+            {props.series.episodes.map((episode, index) => <EpisodeLink key={index} episodeIndex={index} linkUrl={`/watch/${index}`} episode={episode} />)}
         </div>
 
     </section>

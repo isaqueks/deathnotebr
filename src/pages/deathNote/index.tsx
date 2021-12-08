@@ -2,7 +2,6 @@ import Banner from "../../components/banner";
 import BigCharacterView from "../../components/bigCharacterView";
 import CharacterView from "../../components/characterView";
 import CommentSection from "../../components/commentSection";
-import DivImage from "../../components/divImage";
 import DoubleSplit from "../../components/doubleSplit";
 import FullViewportHeight from "../../components/fullViewportHeight";
 import Gradient from "../../components/gradient";
@@ -183,7 +182,7 @@ export default function DeathNote() {
                             Deixe nos comentários!
                         </p>
                         <h3>Discussão:</h3>
-                        <CommentSection />
+                        <CommentSection identifier="Death Note BR" title="Death Note - Comunidade Brasileira" />
                         <footer className="footer">
                             <span>
                                 Copyright © DeathNote.com.br - Isaque K. Schluter
