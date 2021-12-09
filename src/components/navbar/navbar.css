@@ -38,3 +38,9 @@
     font-size: 26px !important;
     font-family: inherit !important;
 }
+
+@media only screen and (max-width: 580px) {
+    .navTitle {
+        display: none;
+    }
+}
