@@ -39,7 +39,7 @@ export default function CommentSection(props: Props) {
     return (
         <>
             <div id="disqus_thread" data-disq={props.title + props.identifier}></div>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <noscript>Habilite JavaScript para carregar os <a href="https://disqus.com/?ref_noscript">comentários.</a></noscript>
         </>
     );
 }

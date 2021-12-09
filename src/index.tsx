@@ -5,10 +5,11 @@ import DeathNote from './pages/deathNote';
 import DeathNoteAnime from './pages/deathNote/anime';
 import reportWebVitals from './reportWebVitals';
 
+const url = window?.location.pathname;
+
 ReactDOM.hydrate(
   <React.StrictMode>
-    {/* <DeathNote /> */}
-    <DeathNoteAnime />
+    {url.includes('/watch/') ? <DeathNoteAnime /> : <DeathNote />}
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -20,7 +20,7 @@ export default function AnimePlayer(props: Props) {
 
     return <section className="animePlayer">
         <div className="videoRow">
-            <video controls style={videoStyle}>
+            <video controls src={episode.videoUrl} style={videoStyle}>
                 <source src={episode.videoUrl} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
@@ -30,7 +30,7 @@ export default function AnimePlayer(props: Props) {
             <div className="videoDescription">
                 <p>
                     Assista o anime Death Note online gratuitamente.
-                    Assista Death Note em alta resolução e qualidade. <br />
+                    Assista Death Note dublado em alta resolução e qualidade. <br />
                     {episode.title}
                 </p>
             </div>

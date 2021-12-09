@@ -1,0 +1,16 @@
+
+.watchBtn {
+    display: inline-block;
+    padding: 16px 22px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px rgba(8, 8, 8, 0.8);
+    transition: all 0.1s;
+}
+
+.watchBtn:hover {
+    background-color: rgb(8, 8, 8);
+}

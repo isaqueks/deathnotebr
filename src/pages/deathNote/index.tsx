@@ -8,6 +8,8 @@ import Gradient from "../../components/gradient";
 import Padding from "../../components/padding";
 import Quote from "../../components/quote";
 import ScrollableViewport from "../../components/scrollableViewport";
+import TextAlign from "../../components/textAlign";
+import WatchButton from "../../components/watchButton";
 import './deathNote.css';
 
 export default function DeathNote() {
@@ -42,7 +44,22 @@ export default function DeathNote() {
                     </Gradient>
                 </Banner>
 
-                <CharacterView name="Light Yagami" image="/img/death-note/light-yagami.png">
+                <CharacterView name="Assista Death Note" image="/img/death-note/cover.jpg">
+                    <p>
+                        Você sabia que pode&nbsp;
+                        <a style={{
+                            color: 'white'
+                        }} href="/watch/0" title="Assista Death Note">assistir Death Note gratuitamente</a>
+                        &nbsp;em nosso site? Basta clicar no botão abaixo: <br />
+                    </p>
+                    <TextAlign type="center">
+                        <WatchButton>
+                                Assista Death Note
+                        </WatchButton>
+                    </TextAlign>
+                </CharacterView>
+
+                <CharacterView name="Light Yagami" image="/img/death-note/light-yagami.png" mode="right">
                     <p>
                         Light Yagami (夜神月, Yagami Raito) é o protagonista
                         de Death Note e a verdadeira identidade do assassino
@@ -55,7 +72,7 @@ export default function DeathNote() {
                     </p>
                 </CharacterView>
 
-                <CharacterView name="L Lawliet" image="/img/death-note/l-lawliet.png" mode="right">
+                <CharacterView name="L Lawliet" image="/img/death-note/l-lawliet.png" mode="left">
                     <p>
                         L (エル, Eru) é um detetive de renome mundial que assume o
                         desafio de capturar o assassino em massa conhecido como Kira.
@@ -64,7 +81,7 @@ export default function DeathNote() {
                     </p>
                 </CharacterView>
 
-                <CharacterView name="Misa Amane" image="/img/death-note/misa-amane.png">
+                <CharacterView name="Misa Amane" image="/img/death-note/misa-amane.png" mode="right">
                     <p>
                         Misa Amane (弥 海砂, Amane Misa) é uma ídolo japonesa famosa
                         que também é portadora de um Death Note. Misa ficou obcecada
@@ -74,7 +91,7 @@ export default function DeathNote() {
                     </p>
                 </CharacterView>
 
-                <CharacterView name="Ryuk" image="/img/death-note/ryuk.png" mode="right">
+                <CharacterView name="Ryuk" image="/img/death-note/ryuk.png" mode="left">
                     <p>
                         É o shinigami (deus da morte no folclore japonês) entediado
                         que indiretamente deu o Death Note a Light Yagami após jogá-lo
@@ -85,7 +102,7 @@ export default function DeathNote() {
                     </p>
                 </CharacterView>
 
-                <CharacterView name="Near" image="/img/death-note/near.png">
+                <CharacterView name="Near" image="/img/death-note/near.png" mode="right">
                     <p>
                         Near (ニア Nia),
                         é uma das crianças superdotadas do orfanato Wammy's House e
@@ -96,7 +113,7 @@ export default function DeathNote() {
                     </p>
                 </CharacterView>
 
-                <CharacterView name="Mello" image="/img/death-note/mello.png" mode="right">
+                <CharacterView name="Mello" image="/img/death-note/mello.png" mode="left">
                     <p>
                         Mello (メ ロ, Mero ) é o mais velho dos dois sucessores
                         de L, criado na Wammy's House , o orfanato de Watari para
@@ -176,6 +193,15 @@ export default function DeathNote() {
                                 loading="lazy"
                                 >
                             </iframe>
+                        </div>
+                        <div className="w-100">
+                            <Padding value="12px">
+                                <TextAlign type="center">
+                                    <WatchButton>
+                                        Assistir Death Note
+                                    </WatchButton>
+                                </TextAlign>
+                            </Padding>
                         </div>
                         <p>
                             E você, é Team L ou Team Kira?

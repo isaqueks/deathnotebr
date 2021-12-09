@@ -5,298 +5,298 @@ const DeathNoteSeries: AnimeSeries = {
     episodes: [
         {
             title: "Episódio 1 - Renascimento",
-            videoUrl: "/video/deathNote/1.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_1.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 2 - Confronto",
-            videoUrl: "/video/deathNote/2.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_2.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 3 - Negociações",
-            videoUrl: "/video/deathNote/3.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_3.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 4 - Perseguição",
-            videoUrl: "/video/deathNote/4.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_4.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 5 - Táticas",
-            videoUrl: "/video/deathNote/5.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_5.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 6 - Rasgo",
-            videoUrl: "/video/deathNote/6.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_6.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 7 - Céu nublado",
-            videoUrl: "/video/deathNote/7.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_7.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 8 - Ofuscação",
-            videoUrl: "/video/deathNote/8.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_8.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 9 - Contato",
-            videoUrl: "/video/deathNote/9.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_9.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 10 - Dúvida",
-            videoUrl: "/video/deathNote/10.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_10.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 11 - Assalto",
-            videoUrl: "/video/deathNote/11.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_11.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 12 - Amor",
-            videoUrl: "/video/deathNote/12.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_12.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 13 - Confissões",
-            videoUrl: "/video/deathNote/13.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_13.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 14 - Amigo",
-            videoUrl: "/video/deathNote/14.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_14.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 15 - Aposta",
-            videoUrl: "/video/deathNote/15.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_15.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 16 - Decisão",
-            videoUrl: "/video/deathNote/16.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_16.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 17 - Execução",
-            videoUrl: "/video/deathNote/17.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_17.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 18 - Aliado",
-            videoUrl: "/video/deathNote/18.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_18.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 19 - Matsuda",
-            videoUrl: "/video/deathNote/19.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_19.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 20 - Artifício",
-            videoUrl: "/video/deathNote/20.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_20.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 21 - Performance",
-            videoUrl: "/video/deathNote/21.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_21.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 22 - Direção",
-            videoUrl: "/video/deathNote/22.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_22.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 23 - Frensei",
-            videoUrl: "/video/deathNote/23.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_23.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 24 - Ressurreição",
-            videoUrl: "/video/deathNote/24.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_24.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 25 - Silêncio",
-            videoUrl: "/video/deathNote/25.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_25.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 26 - Renovação",
-            videoUrl: "/video/deathNote/26.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_26.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 27 - Abdução",
-            videoUrl: "/video/deathNote/16.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_16.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 28 - Impaciência",
-            videoUrl: "/video/deathNote/28.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_28.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 29 - Pai",
-            videoUrl: "/video/deathNote/29.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_29.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 30 - Justiça",
-            videoUrl: "/video/deathNote/30.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_30.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 31 - Transferência",
-            videoUrl: "/video/deathNote/31.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_31.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 32 - Seleção",
-            videoUrl: "/video/deathNote/32.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_32.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 33 - Desprezo",
-            videoUrl: "/video/deathNote/33.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_33.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 34 - Vigilância",
-            videoUrl: "/video/deathNote/34.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_34.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 35 - Malícia",
-            videoUrl: "/video/deathNote/35.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_35.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 36 - 1.28",
-            videoUrl: "/video/deathNote/36.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_36.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
         {
             title: "Episódio 37 - Novo Mundo",
-            videoUrl: "/video/deathNote/36.mp4",
+            videoUrl: "https://animecontentdelivery.nyc3.digitaloceanspaces.com/death_note_36.mp4",
             resolution: {
-                width: 848,
-                height: 480
+                width: 1920,
+                height: 1080
             }
         },
 
