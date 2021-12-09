@@ -44,7 +44,7 @@ export default function DeathNote() {
                     </Gradient>
                 </Banner>
 
-                <CharacterView name="Assista Death Note" image="/img/death-note/cover.jpg">
+                <CharacterView name="Assista Death Note" image="/img/death-note/cover.jpg" center={true}>
                     <p>
                         Você sabia que pode&nbsp;
                         <a style={{

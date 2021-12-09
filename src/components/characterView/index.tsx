@@ -7,16 +7,17 @@ import './characterView.css';
 export interface CharacterProps {
     name: string;
     image: string;
+    center?: boolean;
     mode?: 'left' | 'right';
 }
 
 export default function CharacterView(props: PropsWithChildren<CharacterProps>) {
 
     const mode = props.mode || 'left';
+    const center = props.center || false;
 
     const imageSide = (
-        <div key="img-side" className="characterImage">
-            {/* <img loading="lazy" src={props.image} alt={`Death Note: ${props.name}`} /> */}
+        <div key="img-side" className={"characterImage".concat(center ? ' characterCenter' : '')}>
             <Image src={props.image} alt={`Death Note: ${props.name}`} />
         </div>
     );
