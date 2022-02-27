@@ -15,13 +15,6 @@ if (!fs.existsSync(htmlFile)) {
 
 const templateContent = fs.readFileSync(htmlFile).toString();
 
-const reactGeneratedIndexDom = new JSDOM(fs.readFileSync(path.join(path.dirname(htmlFile), './index.html'))).window.document;
-
-(global as any).window = {};
-(global as any).document = {};
-
-const renderedHtml = ReactDOMServer.renderToString(<DeathNoteAnime />);
-
 const baseDir = path.join(path.dirname(htmlFile), './watch');
 
 fs.mkdirSync(baseDir, { recursive: true });
@@ -30,6 +23,19 @@ fs.mkdirSync(baseDir, { recursive: true });
 
 let i = 0;
 for (const ep of DeathNoteSeries.episodes) {
+
+    const reactGeneratedIndexDom = new JSDOM(fs.readFileSync(path.join(path.dirname(htmlFile), './index.html'))).window.document;
+
+    (global as any).window = {
+        BUILD_TIME: true,
+        location: {
+            href: `/watch/${i}`,
+        }
+    };
+    (global as any).document = {};
+
+    const renderedHtml = ReactDOMServer.renderToString(<DeathNoteAnime />);
+
 
     const templateVars = {
         __EP_TITLE__: ep.title,

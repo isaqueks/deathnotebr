@@ -293,7 +293,7 @@ const DeathNoteSeries: AnimeSeries = {
         },
         {
             title: "Episódio 37 - Novo Mundo",
-            videoUrl: "https://static.deathnote.com.br/death_note_36.mp4",
+            videoUrl: "https://static.deathnote.com.br/death_note_37.mp4",
             resolution: {
                 width: 1920,
                 height: 1080
