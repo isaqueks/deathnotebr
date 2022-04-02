@@ -24,6 +24,9 @@ export default function AnimePlayer(props: Props) {
         new SRTSubtitle(`https://static.deathnote.com.br/subtitles/E${(+props.currentEpisode+1)}.srt`, 'pt-BR', 'Português (Brasil)')
     ]
 
+    console.log(episode);
+    
+
     return <section className={style.animePlayer}>
         <div className={style.videoRow}>
             <div style={videoStyle}>
