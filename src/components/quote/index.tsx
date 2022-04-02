@@ -1,4 +1,4 @@
-import './quote.css';
+import style from './Quote.module.css';
 import { PropsWithChildren } from "react";
 
 interface Props {
@@ -9,10 +9,10 @@ export default function Quote(props: PropsWithChildren<Props>) {
 
     const { children, cite, ...other } = props;
 
-    return <p className="quote" {...other}>
+    return <div className={style.quote} {...other}>
         <blockquote>
             {children}
             <cite>{cite}</cite>
         </blockquote>
-    </p>
+    </div>
 }

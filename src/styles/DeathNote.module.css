@@ -4,11 +4,6 @@
     color: white;
 }
 
-@font-face {
-    font-family: 'death-note';
-    src: url('./death.tft');
-}
-
 .deathNote h1, .deathNote .h1 {
     letter-spacing: 1pt;
     font-size: 4rem;
@@ -23,7 +18,7 @@
     font-family: 'death-note';
 }
 
-.page-block {
+.pageBlock {
     width: 100%;
     height: 100vh;
     /* height: auto; */
@@ -50,11 +45,11 @@
     display: grid;
 }
 
-.deathNote .siteDescription p {
+.siteDescription p {
     font-size: 1.2em;
 }
 
-.deathNote .seriesDescription {
+.seriesDescription {
     width: 350px;
     min-width: 50%;
     max-width: 100%;
@@ -67,7 +62,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-    .deathNote .seriesDescription p {
+    .seriesDescription p {
         font-size: clamp(1rem, 1vw, 1.25rem) !important;
     }
 }

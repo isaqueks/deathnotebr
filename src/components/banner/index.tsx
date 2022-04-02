@@ -1,11 +1,11 @@
 import DivImage from '../divImage';
-import './banner.css';
+import style from './Banner.module.css';
 
 export default function Banner(props) {
     
     const { url, ...other } = props;
 
-    return <DivImage className="splashSection" url={url} {...other}>
+    return <DivImage className={style.splashSection} url={url} {...other}>
         {props.children}
     </DivImage>
 }

@@ -1,7 +1,7 @@
-import './fullViewportHeight.css';
+import style from './FullViewportHeight.module.css';
 
 export default function FullViewportHeight(props) {
-    return <div className="viewportHeight">
+    return <div className={style.viewportHeight}>
         {props.children}
     </div>
 }

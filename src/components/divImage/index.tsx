@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import './divImage.css';
+import style from './DivImage.module.css';
 
 interface Props {
     size?: 'contain' | 'cover';
@@ -14,7 +14,7 @@ interface Props {
 
 export default function DivImage(props: PropsWithChildren<Props>) {
 
-    const style: any = {
+    const inlineStyle: any = {
         backgroundImage: `url("${props.url}")`,
         backgroundSize: props.size || 'cover',
         backgroundPosition: props.position || 'center',
@@ -23,13 +23,13 @@ export default function DivImage(props: PropsWithChildren<Props>) {
     }
 
     if (props.x) {
-        style.backgroundPositionX = props.x;
+        inlineStyle.backgroundPositionX = props.x;
     }
     if (props.y) {
-        style.backgroundPositionY = props.y;
+        inlineStyle.backgroundPositionY = props.y;
     }
 
-    return <div className={"divImage".concat(typeof props.className === 'string' ? ` ${props.className}` : '')} style={style}>
+    return <div className={style.divImage.concat(typeof props.className === 'string' ? ` ${props.className}` : '')} style={inlineStyle}>
         {props.children}
     </div>
 }

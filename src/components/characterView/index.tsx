@@ -1,8 +1,6 @@
 import React, { PropsWithChildren } from 'react';
-import ScrollableSection from '../scrollableSection';
-import ScrollableViewport from '../scrollableViewport';
 import Image from '../image';
-import './characterView.css';
+import style from './CharacterView.module.css';
 
 export interface CharacterProps {
     name: string;
@@ -17,18 +15,18 @@ export default function CharacterView(props: PropsWithChildren<CharacterProps>) 
     const center = props.center || false;
 
     const imageSide = (
-        <div key="img-side" className={"characterImage".concat(center ? ' characterCenter' : '')}>
+        <div key="img-side" className={style.characterImage.concat(center ? ' '.concat(style.characterCenter) : '')}>
             <Image src={props.image} alt={`Death Note: ${props.name}`} />
         </div>
     );
 
     const infoSide = (
-        <div key="info-side" className="characterInfo">
-            <div className="characterInfoWrapper">
-                <h2 className="h1 characterName">
+        <div key="info-side" className={style.characterInfo}>
+            <div className={style.characterInfoWrapper}>
+                <h2 className={`h1 ${style.characterName}`}>
                     {props.name}
                 </h2>
-                <div className="characterDescription">
+                <div className={style.characterDescription}>
                     {props.children}
                 </div>
             </div>
@@ -36,7 +34,7 @@ export default function CharacterView(props: PropsWithChildren<CharacterProps>) 
     );
 
     return (
-        <div className={`characterView viewMode-${mode}`}>
+        <div className={`${style.characterView} ${style[`viewMode-${mode}`]}`}>
             {imageSide}
             {infoSide}
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropsWithChildren } from 'react';
-import './doubleSplit.css';
+import style from './DoubleSplit.module.css';
 
 export default function DoubleSplit(props: PropsWithChildren<any>) {
     
@@ -12,11 +12,11 @@ export default function DoubleSplit(props: PropsWithChildren<any>) {
     }
     const [left, right] = children;
 
-    return <div className="doubleSplit">
-        <div className="splitLeft">
+    return <div className={style.doubleSplit}>
+        <div className={style.splitLeft}>
             {left}
         </div>
-        <div className="splitRight">
+        <div className={style.splitRight}>
             {right}
         </div>
     </div>

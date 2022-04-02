@@ -3,7 +3,7 @@ import DivImage from "../divImage";
 import Gradient from "../gradient";
 import Padding from "../padding";
 import TextAlign from "../textAlign";
-import './bigCharacterView.css';
+import style from './BigCharacterView.module.css';
 
 interface Props {
     image: string;
@@ -23,16 +23,16 @@ export default function BigCharacterView(props: PropsWithChildren<Props>) {
         url={props.image}
         size="cover"
         position="right"
-        className="bigCharacter">
-        <Gradient className="bigCharacterGradient" gradient={Gradients[props.mode]}>
-            <div className="bigCharacterDetails">
+        className={style.bigCharacter}>
+        <Gradient className={style.bigCharacterGradient} gradient={Gradients[props.mode]}>
+            <div className={style.bigCharacterDetails}>
                 <TextAlign type="center">
                     <h1>{props.name}</h1>
                 </TextAlign>
-                <div className="bigCharacterDescription">
-                    <div className="bigCharacterDescriptionWrapper">
+                <div className={style.bigCharacterDescription}>
+                    <div className={style.bigCharacterDescriptionWrapper}>
                         <Gradient gradient={TextGradient}>
-                            <Padding className="bigCharacterPadding" value="24px" bottom="48px">
+                            <Padding className={style.bigCharacterPadding} value="24px" bottom="48px">
                                 <TextAlign type={props.mode}>
                                     {props.children}
                                 </TextAlign>

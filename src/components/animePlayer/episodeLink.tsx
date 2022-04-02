@@ -1,5 +1,6 @@
-import { useEpisodeContext } from "../../contexts/episodeContext";
-import { AnimeEpisode } from "../../ts/series";
+import Link from "next/link";
+import { AnimeEpisode } from "@ts/series";
+import style from './AnimePlayer.module.css';
 
 interface Props {
     episode: AnimeEpisode;
@@ -9,20 +10,12 @@ interface Props {
 
 export default function EpisodeLink({ linkUrl, episode, episodeIndex }: Props) {
 
-    const context = useEpisodeContext();
-
-    const clickHandler = (e) => {
-        e.preventDefault();
-        context.setCurrentEpisodeIndex(episodeIndex)
-    }
-
-    return <a 
-        href={linkUrl} 
-        title={episode.title} 
-        className="episodeLink"
-        onClick={e => clickHandler(e)}
-    >
-        {episode.title}
-    </a>
+    return (
+        <Link href={linkUrl}>
+            <a title={episode.title} className={style.episodeLink}>
+                {episode.title}
+            </a>
+        </Link>
+    )
 
 }

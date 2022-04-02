@@ -1,7 +1,7 @@
 import React, { Children, useRef } from "react";
 import scrollAnimation from "../../ts/scrollAnim";
 import ScrollableSection from "../scrollableSection";
-import './scrollableViewport.css';
+import style from './ScrollableViewport.module.css';
 
 export default function ScollableViewport(props) {
 
@@ -10,7 +10,7 @@ export default function ScollableViewport(props) {
 
     let i = 0;
 
-    return <div ref={ref} className="scrollableViewport" onScroll={scrollAnimation(ref)}>
+    return <div ref={ref} className={style.scrollableViewport} onScroll={scrollAnimation(ref)}>
         {children.map(child => {
             return <ScrollableSection key={i} index={i++}>
                 {child}
