@@ -9,6 +9,18 @@ export default function Meta(props) {
             <title>
                 {title}
             </title>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1QJJSL5RK" />
+            <script 
+                dangerouslySetInnerHTML={{
+                    __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+        
+                    gtag('config', 'G-X1QJJSL5RK');
+                    `
+                }}
+            />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="theme-color" content="#000000" />
             <meta
