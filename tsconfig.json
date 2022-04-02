@@ -29,8 +29,15 @@
             "./src/contexts/*"
         ],
         "@ts/*": [
-            "./src/ts/*"
-        ]
+            "./src/ts/*",
+            "./src/components/lib/video-player/src/ts/*"
+        ],
+        "@lib/VideoPlayer": [
+            "./src/components/lib/video-player/src/Components/VideoPlayer.tsx"
+        ],
+
+        "@Components/*": ["./src/components/lib/video-player/src/components/*"],
+        "@Styles/*": ["./src/components/lib/video-player/src/styles/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

@@ -1,0 +1,3 @@
+[submodule "src/components/lib/video-player"]
+	path = src/components/lib/video-player
+	url = https://github.com/isaqueks/video-player

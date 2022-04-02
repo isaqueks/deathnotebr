@@ -1,6 +1,8 @@
 import AnimeSeries from "@ts/series";
 import EpisodeLink from "./episodeLink";
 import style from './AnimePlayer.module.css';
+import VideoPlayer from "@lib/VideoPlayer";
+import SRTSubtitle from "@components/lib/video-player/src/ts/SRTSubtitle";
 
 interface Props {
     series: AnimeSeries;
@@ -18,12 +20,20 @@ export default function AnimePlayer(props: Props) {
         aspectRatio: `${w}/${h}`
     }
 
+    const subtitles = [
+        new SRTSubtitle(`https://static.deathnote.com.br/subtitles/E${(+props.currentEpisode+1)}.srt`, 'pt-BR', 'Português (Brasil)')
+    ]
+
     return <section className={style.animePlayer}>
         <div className={style.videoRow}>
-            <video controls src={episode.videoUrl} style={videoStyle}>
-                <source src={episode.videoUrl} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+            <div style={videoStyle}>
+                <VideoPlayer 
+                    src={episode.videoUrl} 
+                    type="video/mp4" 
+                    tracks={[]} 
+                    subtitles={subtitles} 
+                />
+            </div>
             <div className={style.videoTitle}>
                 <span>{episode.title}</span>
             </div>
