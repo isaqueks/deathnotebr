@@ -2,6 +2,7 @@
 export interface AnimeEpisode {
     title: string;
     videoUrl: string;
+    description?: string;
     resolution: {
         width: number;
         height: number;

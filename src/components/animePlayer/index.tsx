@@ -42,9 +42,12 @@ export default function AnimePlayer(props: Props) {
             </div>
             <div className={style.videoDescription}>
                 <p>
+                    {episode.description}
+                </p>
+                <p>
                     Assista o anime Death Note online gratuitamente.
                     Assista Death Note dublado em alta resolução e qualidade. <br />
-                    {episode.title}
+                    <strong>{episode.title}</strong>
                 </p>
             </div>
         </div>
