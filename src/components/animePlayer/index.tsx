@@ -33,7 +33,7 @@ export default function AnimePlayer(props: Props) {
                 <VideoPlayer 
                     src={episode.videoUrl} 
                     type="video/mp4" 
-                    tracks={[]} 
+                    tracks={[{ src: episode.videoUrl, name: 'Português (BR)', language: 'pt-BR' }]} 
                     subtitles={subtitles} 
                 />
             </div>
