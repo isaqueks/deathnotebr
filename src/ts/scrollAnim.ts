@@ -19,12 +19,12 @@ export default function scrollAnim<T extends Element = HTMLDivElement>(ref: Reac
             opacity = 1;
         }
 
-        const str = opacity.toFixed(2);
+        const styleStr = opacity.toFixed(2);
 
-        if (element.style.opacity == str) {
+        if (element.style.opacity == styleStr) {
             return;
         }
-        element.style.opacity = str;
+        element.style.opacity = styleStr;
     }
 
     return (e) => {
@@ -41,7 +41,6 @@ export default function scrollAnim<T extends Element = HTMLDivElement>(ref: Reac
         lastExec = Date.now();
 
         const top = element.scrollTop;
-
         // Chilren is cached for performance enhacement
         if (!children) {
             children = Array.from<HTMLElement>(element.children as any);
@@ -61,7 +60,11 @@ export default function scrollAnim<T extends Element = HTMLDivElement>(ref: Reac
         // (top - curr.offsetTop) / next.offsetHeight is the percentage itself
         // but multiplying it by 2, raising to 1.7 and divising by 2
         // gives a better effect in my opinion
-        let perc = (((top - curr.offsetTop) / next.offsetHeight) * 2) ** 1.7 / 2;
+
+        const diff = Math.abs(window.innerHeight - curr.offsetHeight);
+        let scrollProgress = (top - curr.offsetTop);
+
+        let perc = (((scrollProgress) / next.offsetHeight) ** 1.7);
         perc = 0.1 + perc * 0.9;
 
         applyOpacity(next, perc);

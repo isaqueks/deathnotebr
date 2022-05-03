@@ -5,5 +5,5 @@
 
     scroll-behavior: smooth;
     overscroll-behavior: none;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y proximity; */
 }

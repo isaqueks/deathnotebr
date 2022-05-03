@@ -33,7 +33,7 @@
     .characterView {
         grid-template-columns: 100% !important;   
         grid-template-rows: 300px 1fr !important;
-        height: 100vh;
+        /* height: 100vh; */
         overflow: auto;
     }
 

@@ -10,7 +10,7 @@ export default function ScollableViewport(props) {
 
     let i = 0;
 
-    return <div ref={ref} className={style.scrollableViewport} onScroll={scrollAnimation(ref)}>
+    return <div ref={ref} className={style.scrollableViewport} onScroll={/*scrollAnimation(ref)*/null}>
         {children.map(child => {
             return <ScrollableSection key={i} index={i++}>
                 {child}
