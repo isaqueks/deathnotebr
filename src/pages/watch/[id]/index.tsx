@@ -52,8 +52,17 @@ export default function DeathNoteAnime({ episode, index }: Props) {
             description={`Assista Death Note online Dublado - Episódio ${index + 1} (${episode.title}) - DeathNoteBR - Comunidade Brasileira - L vs Kira - Assistir Death Note gratuitamente`}
             type="video.episode"
             url={`https://deathnote.com.br/watch/${index}`}
+            image="https://deathnote.com.br/img/death-note/series-cover.jpeg"
         >
-            <meta property="og:video:series" content="Death Note" />
+            <meta property="og:video:series" content={`https://deathnote.com.br/watch/${index}`} />
+            <meta property="og:video" content={episode.videoUrl} />
+            <meta property="og:video:secure_url" content={episode.videoUrl} />
+            <meta property="og:video:type" content="video/mp4" />
+            <meta property="og:video:width" content={String(episode.resolution.width)} />
+            <meta property="og:video:height" content={String(episode.resolution.height)} />
+
+            <meta property="og:image:width" content="640" />
+            <meta property="og:image:height" content="360" />
         </Meta>
         <ScrollableViewport>
             <div className={`${style.deathNote} ${style.pageBlock}`}>

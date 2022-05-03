@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Meta(props) {
 
-    const { title, keywords, description, type, url, children } = props;
+    const { title, keywords, description, type, url, children, image } = props;
 
     return (
         <Head>
@@ -36,7 +36,7 @@ export default function Meta(props) {
             <meta property="og:type" content={type} />
             <meta property="og:url" content={url} />
             <meta name="keywords" content={keywords} />
-            <meta property="og:image" content="https://deathnote.com.br/logo512.png" />
+            <meta property="og:image" content={image || "https://deathnote.com.br/logo512.png"} />
             <link rel="apple-touch-icon" href="/logo192.png" />
             <link rel="icon" href="/favicon.ico" />
             {children}
