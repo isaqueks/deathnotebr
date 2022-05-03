@@ -2,8 +2,4 @@
 .scrollableSection {
     background-color: inherit;
     color: inherit;
-    overflow-y: hidden;
-
-    scroll-snap-stop: always;
-    scroll-snap-align: start;
 }
