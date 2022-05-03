@@ -47,7 +47,7 @@ export default function DeathNoteAnime({ episode, index }: Props) {
 
     return (<div>
         <Meta
-            title={`Death Note EP ${index + 1} - ${episode.title} (Dublado) - DeathNoteBR`}
+            title={`Death Note EP ${(Number(index) + 1)} - ${episode.title} (Dublado) - DeathNoteBR`}
             keywords={"Death Note,Anime,Dublado,".concat(episode.title)}
             description={`Assista Death Note online Dublado - Episódio ${index + 1} (${episode.title}) - DeathNoteBR - Comunidade Brasileira - L vs Kira - Assistir Death Note gratuitamente`}
             type="video.episode"
